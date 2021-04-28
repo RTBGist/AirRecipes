@@ -1,13 +1,71 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+    font-family: 'Gilroy';
+    src: url("./assets/fonts/Gilroy-ExtraBold.eot?#iefix") format("embedded-opentype"),
+    url("./assets/fonts/Gilroy-ExtraBold.otf") format("opentype"),
+    url("./assets/fonts/Gilroy-ExtraBold.woff") format("woff"),
+    url("./assets/fonts/Gilroy-ExtraBold.ttf") format("truetype"),
+    url("./assets/fonts/Gilroy-ExtraBold.svg#gilroy-extrabold") format("svg");
+    font-weight: 800;
+    font-style: normal;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.MuiGrid-container {
+    padding: 0 15px;
+}
+
+.MuiTypography-h1.MuiTypography-root {
+    font-family: 'Gilroy', 'Roboto', sans-serif;
+    font-size: 64px;
+    line-height: 80px;
+    letter-spacing: 0.01rem;
+    color: #000;
+}
+
+
+.MuiTypography-h2.MuiTypography-root {
+    font-family: 'Gilroy', 'Roboto', sans-serif;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 0.01rem;
+    color: #000;
+}
+
+.MuiTypography-h3.MuiTypography-root {
+    font-family: 'Gilroy', 'Roboto', sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.01rem;
+    color: #000;
+}
+
+.MuiGrid-root.MuiGrid-container {
+    max-width: 1090px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width: 768px){
+    .MuiTypography-h1.MuiTypography-root {
+        font-size: 32px;
+        line-height: 48px;
+    }
+    .MuiTypography-h2.MuiTypography-root {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .MuiTypography-h3.MuiTypography-root {
+        font-size: 18px;
+        line-height: 24px;
+    }
 }
